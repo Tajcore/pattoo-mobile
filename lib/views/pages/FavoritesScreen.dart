@@ -93,22 +93,7 @@ class _DataDisplayState extends State<DataDisplay> {
                                       child: Stack(
                                           fit: StackFit.passthrough,
                                           children: <Widget>[
-                                            Center(
-                                              child: Align(
-                                                alignment: Alignment.topLeft,
-                                                child: SizedBox(
-                                                    height:
-                                                        queryData.size.height *
-                                                            0.04,
-                                                    width:
-                                                        queryData.size.height *
-                                                            0.04,
-                                                    child: Icon(
-                                                      Icons.favorite,
-                                                      color: Colors.red,
-                                                    )),
-                                              ),
-                                            ),
+                                            
                                             Center(
                                               child: Wrap(
                                                   direction: Axis.horizontal,

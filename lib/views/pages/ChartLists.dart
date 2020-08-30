@@ -22,7 +22,6 @@ class _ChartListState extends State<ChartList> {
   @override
   Widget build(BuildContext context) {
     MediaQueryData queryData = MediaQuery.of(context);
-    String assetName = "assets/increase.png";
     return (Provider.of<AgentsManager>(context).loaded == false)
         ? CustomScrollView(slivers: <Widget>[
             SliverAppBar(
@@ -125,26 +124,7 @@ class _ChartListState extends State<ChartList> {
                                     child: Stack(
                                         fit: StackFit.passthrough,
                                         children: <Widget>[
-                                          Center(
-                                            child: Align(
-                                              alignment: Alignment.topLeft,
-                                              child: SizedBox(
-                                                height: queryData.size.height *
-                                                    0.04,
-                                                width: queryData.size.height *
-                                                    0.04,
-                                                child: FittedBox(
-                                                  fit: BoxFit.contain,
-                                                  child:
-                                                      Stack(children: <Widget>[
-                                                    Image(
-                                                        image: AssetImage(
-                                                            assetName)),
-                                                  ]),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
+                                      
                                           Center(
                                             child: Wrap(
                                                 direction: Axis.horizontal,
